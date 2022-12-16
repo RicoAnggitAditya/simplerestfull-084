@@ -13,6 +13,9 @@ public class Product {
     
     private String Id;
     private String Name;
+    private int Price;
+    private int Qty;
+    private int Total;
 
     public String getId() {
         return Id;
@@ -29,5 +32,29 @@ public class Product {
     public void setName(String Name) {
         this.Name = Name;
     }
-    
+
+    public int getPrice() {
+        return Price;
+    }
+
+    public void setPrice(int Price) {
+        this.Price = Price;
+    }
+
+    public int getQty() {
+        return Qty;
+    }
+
+    public void setQty(int Qty) {
+        this.Qty = Qty;
+    }
+
+    public int getTotal() {
+        return Total;
+    }
+
+    public void setTotal() {
+        this.Total = Price * Qty;
+    }
+
 }
